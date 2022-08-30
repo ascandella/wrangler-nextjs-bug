@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
-    "proxy": "wrangler dev --local"
+    "proxy": "wrangler dev --local worker.js"
   },
   "devDependencies": {
     "wrangler": "^2.0.28"
