@@ -33,7 +33,7 @@ Which leaves the wrangler process unavailable to process further requests.
 
 ```
 yarn
-yarn dev # start next.js process on 3030
+yarn dev # start next.js process on 3000
 # In another terminal
 yarn proxy # start cloudflare worker on 4000
 ```
