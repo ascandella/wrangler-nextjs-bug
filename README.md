@@ -27,3 +27,19 @@ Miniflare process exited with code 1
 ```
 
 Which leaves the wrangler process unavailable to process further requests.
+
+
+## To reproduce
+
+```
+yarn
+yarn dev # start next.js process on 3030
+# In another terminal
+yarn proxy # start cloudflare worker on 4000
+```
+
+Then load http://localhost:4000 to connect to Next.js through the Cloudflare
+worker.
+
+Kill (Control-C) the Next.js process, and observe that localhost:4000 is no
+longer working, even after re-starting the Next.js server (`yarn dev`)
