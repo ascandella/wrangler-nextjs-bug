@@ -1,0 +1,19 @@
+{
+  "name": "wrangler-nextjs-bug",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Aiden Scandella <git@sca.ndella.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "proxy": "wrangler dev --local"
+  },
+  "devDependencies": {
+    "wrangler": "^2.0.28"
+  },
+  "dependencies": {
+    "next": "^12.2.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
